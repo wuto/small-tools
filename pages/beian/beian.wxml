@@ -1,0 +1,28 @@
+<!--pages/info/info.wxml-->
+<!-- <text class='title'>网站备案查询</text> -->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section">
+
+    <input name="input" class='inpput' placeholder="请输入网址" auto-focus/>
+  </view>
+
+
+  <view class="btn-area">
+    <button class="btn-sec" type="primary" formType="submit">查询</button>
+    <!-- <button formType="reset">Reset</button> -->
+  </view>
+
+</form>
+
+
+<text class='text'>主办单位名称：{{urldata.name}}</text>
+<text class='text'>主办单位性质：{{urldata.nature}}</text>
+<text class='text'>网站备案/许可证号：{{urldata.icp}}</text>
+<text class='text'>网站名称：{{urldata.sitename}}</text>
+<text class='text'>网站首页网址：{{urldata.indexUrl}}</text>
+<text class='text'>备案的一级域名：{{urldata.domain}}</text>
+<text class='text'>你查询的信息：{{urldata.search}}</text>
+<text class='text'>当前域名的备案号：{{urldata.nowIcp}}</text>
+<!-- <text class='text'>备案信息检查时间:{{urldata.checkDate}}</text> -->

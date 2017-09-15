@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container main-list">
+  <block  wx:key="*this" wx:for="{{lists}}" wx:for-item="item">
+    <button type="primary"  class="item-item" bindtap='open' data-position="{{item.url}}">{{index + 1}}. {{item.text}}</button>
+  </block>
+</view>

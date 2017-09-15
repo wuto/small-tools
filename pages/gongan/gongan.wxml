@@ -1,0 +1,39 @@
+<!--pages/info/info.wxml-->
+
+
+
+<!-- <text class='title'>网站备案查询</text> -->
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="section">
+
+    <input name="input" class='inpput' placeholder="请输入网址" auto-focus/>
+  </view>
+
+
+  <view class="btn-area">
+    <button type="primary" formType="submit">查询</button>
+    <!-- <button formType="reset">Reset</button> -->
+  </view>
+
+</form>
+
+<text class='text'>网站名称：{{urldata.sitename}}</text>
+
+
+<text class='text'>网站域名：{{urldata.sitedomain}}</text>
+
+<text class='text'>开办主体：{{urldata.comtype}}</text>
+
+<text class='text'>网站类别：{{urldata.sitetype}}</text>
+
+<text class='text'>公安备案号：{{urldata.id}}</text>
+
+<text class='text'>开办者名称：{{urldata.comname}}</text>
+
+
+<text class='text'>备案地公安机关：{{urldata.comaddress}}</text>
+<text class='text'>公安机关备案时间：{{urldata.cdate}}</text>
+
+<text class='text'>本站最后同步时间：{{urldata.updateTime}}</text>

@@ -1,0 +1,19 @@
+.inpput {
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.btn-area {
+  margin: 30rpx;
+  
+  
+}
+
+
+.text {
+  display: flex;
+  margin: 10rpx;
+  flex-direction: column;
+}
